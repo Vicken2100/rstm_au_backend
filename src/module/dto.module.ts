@@ -50,7 +50,7 @@ export type BaseResult = {
 
 export interface UserAuthToken {
     xid: string;
-    username: string;
+    email: string;
 }
 
 export type EncodeToken = {

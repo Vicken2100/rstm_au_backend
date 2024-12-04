@@ -6,10 +6,10 @@ const Constants = {
     DEFAULT_JSON: "{}",
     DEFAULT_JSON_MYSQL: "JSON_OBJECT()",
     DEFAULT_VERSION: 1,
-    DEFAULT_MODIFIED_BY: {
+    DEFAULT_MODIFIED_BY: JSON.stringify({
         xid: "anonymus",
         email: "anonymus@anonymus.com",
-    },
+    }),
 };
 
 const ControlRole = {

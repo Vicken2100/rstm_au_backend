@@ -7,7 +7,7 @@ class JwtModule {
     private readonly jwtRefreshKey = config.jwtRefreshKey;
 
     issue = (data: UserAuthToken): JwtResult => {
-        const token = sign({ data: { xid: data.xid, email: data.username } }, this.jwtKey);
+        const token = sign({ data: { xid: data.xid, email: data.email } }, this.jwtKey);
 
         return token;
     };
@@ -19,7 +19,7 @@ class JwtModule {
     };
 
     issueWithAudience = (data: UserAuthToken, audience: string): JwtResult => {
-        const token = sign({ data: { xid: data.xid, email: data.username } }, this.jwtKey, {
+        const token = sign({ data: { xid: data.xid, email: data.email } }, this.jwtKey, {
             audience: audience,
         });
 

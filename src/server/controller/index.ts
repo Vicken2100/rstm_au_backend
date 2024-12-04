@@ -1,7 +1,12 @@
 import { Router } from "express";
 import { AppServiceMap } from "../../contract/service.contract";
 import { BaseController } from "./base.controller";
+import { AuthController } from "./auth.controller";
+import { UsersController } from "./users.controller";
 export class Controller {
+    private readonly auth: BaseController = new AuthController();
+    private readonly users: BaseController = new UsersController();
+
     init(service: AppServiceMap): Router {
         const router = Router();
         Object.entries(this).forEach(([k, r]) => {

@@ -132,7 +132,7 @@ export class Users extends Model<UsersAttributes, UsersCreationAttributes> imple
             },
             {
                 sequelize,
-                tableName: "users",
+                tableName: "user",
                 timestamps: false,
             }
         );
