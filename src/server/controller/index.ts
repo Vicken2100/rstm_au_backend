@@ -1,11 +1,19 @@
 import { Router } from "express";
 import { AppServiceMap } from "../../contract/service.contract";
-import { BaseController } from "./base.controller";
 import { AuthController } from "./auth.controller";
+import { BaseController } from "./base.controller";
+import { BonusController } from "./bonus.controller";
+import { JabatanGajiController } from "./jabatan-gaji.controller";
+import { UangLemburController } from "./uang-lembur.controller";
+import { UangMakanController } from "./uang-makan.controller";
 import { UsersController } from "./users.controller";
 export class Controller {
     private readonly auth: BaseController = new AuthController();
     private readonly users: BaseController = new UsersController();
+    private readonly jabatanGaji: BaseController = new JabatanGajiController();
+    private readonly uangMakan: BaseController = new UangMakanController();
+    private readonly uangLembur: BaseController = new UangLemburController();
+    private readonly bonus: BaseController = new BonusController();
 
     init(service: AppServiceMap): Router {
         const router = Router();

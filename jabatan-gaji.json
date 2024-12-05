@@ -1,0 +1,20 @@
+[
+  {
+    "jabatan": "Sales",
+    "gajiPokok": 3700000,
+    "tunjanganKeluarga": 3700000,
+    "tunjanganKesehatan": 3700000
+  },
+  {
+    "jabatan": "Supir",
+    "gajiPokok": 3700000,
+    "tunjanganKeluarga": 3700000,
+    "tunjanganKesehatan": 3700000
+  },
+  {
+    "jabatan": "Karyawan Kantor",
+    "gajiPokok": 3700000,
+    "tunjanganKeluarga": 3700000,
+    "tunjanganKesehatan": 3700000
+  }
+]

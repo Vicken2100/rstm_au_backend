@@ -1,0 +1,20 @@
+[
+  {
+    "start": 0,
+    "end": 10,
+    "startBonus": 100000,
+    "endBonus": 150000
+  },
+  {
+    "start": 11,
+    "end": 15,
+    "startBonus": 150000,
+    "endBonus": 200000
+  },
+  {
+    "start": 16,
+    "end": 20,
+    "startBonus": 200000,
+    "endBonus": 250000
+  }
+]
