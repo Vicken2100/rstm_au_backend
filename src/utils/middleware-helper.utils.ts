@@ -43,7 +43,7 @@ export function defaultMiddleware(audiance?: string[]): RequestHandler {
             }
             delete req.headers.authorization;
 
-            const userSession = verification.data as UserSession;
+            const userSession = verification.data as unknown as UserSession;
 
             saveUsersSession(req, userSession);
             next();
@@ -78,7 +78,7 @@ export function middlewareRBAC(audiance?: string[]): RequestHandler {
             }
             delete req.headers.authorization;
 
-            const userSession = verification.data as UserSession;
+            const userSession = verification.data as unknown as UserSession;
 
             saveUsersSession(req, userSession);
             next();
