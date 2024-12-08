@@ -26,6 +26,11 @@ COPY --from=builder /app/node_modules ./node_modules
 COPY ./.sequelizerc ./
 COPY ./migrations ./migrations
 COPY ./public ./public
+COPY ./uang-makan.json ./
+COPY ./uang-lembur.json ./
+COPY ./penilaian.json ./
+COPY ./jabatan-gaji.json ./
+COPY ./bonus.json.json ./
 
 # copy build app
 COPY --from=builder /app/build ./build
