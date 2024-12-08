@@ -37,5 +37,8 @@ COPY --from=builder /app/build ./build
 # download node modules production only
 RUN npm ci --omit=dev
 
+RUN apk add --no-cache tzdata
+ENV TZ=Asia/Makassar
+
 # run application
 CMD ["npm", "start"]
