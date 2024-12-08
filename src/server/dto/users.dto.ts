@@ -34,5 +34,22 @@ export interface CreateUsers_Payload {
     dateIn: string;
     email: string;
     password: string;
-    pin: string;
+    pin: number;
+}
+
+export interface UpdateProfileRequest {
+    xid: string;
+    version: number;
+    username: string;
+    password: string;
+    birthDate: string;
+    isMale: boolean;
+    nik: string;
+    noTelp: string;
+    namaBank: string;
+    noRek: string;
+    namaRekening: string;
+    alamatProvinsi: string;
+    alamatKota: string;
+    alamatKecamatan: string;
 }

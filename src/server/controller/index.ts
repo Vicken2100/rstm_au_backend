@@ -7,6 +7,9 @@ import { JabatanGajiController } from "./jabatan-gaji.controller";
 import { UangLemburController } from "./uang-lembur.controller";
 import { UangMakanController } from "./uang-makan.controller";
 import { UsersController } from "./users.controller";
+import { PenilaianController } from "./penilaian.controller";
+import { PresensiController } from "./presensi.controller";
+import { GajiController } from "./gaji.controller";
 export class Controller {
     private readonly auth: BaseController = new AuthController();
     private readonly users: BaseController = new UsersController();
@@ -14,6 +17,9 @@ export class Controller {
     private readonly uangMakan: BaseController = new UangMakanController();
     private readonly uangLembur: BaseController = new UangLemburController();
     private readonly bonus: BaseController = new BonusController();
+    private readonly penilaian: BaseController = new PenilaianController();
+    private readonly presensi: BaseController = new PresensiController();
+    private readonly gaji: BaseController = new GajiController();
 
     init(service: AppServiceMap): Router {
         const router = Router();

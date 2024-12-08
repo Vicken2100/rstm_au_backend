@@ -12,6 +12,7 @@ import { initErrorResponse } from "./response";
 import compression from "compression";
 import { AppRepositoryMap } from "./contract/repository.contract";
 import { AppServiceMap } from "./contract/service.contract";
+import { cronModule } from "./module/cron.module";
 
 start();
 
@@ -33,6 +34,8 @@ async function start(): Promise<void> {
 
     const repository = initRepository(source);
     const service = initService(repository);
+
+    cronModule.start(service);
 
     const app = init(service);
     app.listen(config.port, () => {

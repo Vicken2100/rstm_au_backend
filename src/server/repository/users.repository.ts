@@ -31,6 +31,14 @@ export class SequelizeUsersRepository extends BaseRepository implements UsersRep
         });
     };
 
+    findByPin = async (pin: string): Promise<UsersAttributes | null> => {
+        return this.users.findOne({
+            where: {
+                pin,
+            },
+        });
+    };
+
     findUsersCount = async (): Promise<number> => {
         return this.users.count();
     };

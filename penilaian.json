@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "indicator": "Ketepatan Waktu",
+    "percentage": 25
+  },
+  {
+    "indicator": "Kerajinan",
+    "percentage": 35
+  },
+  {
+    "indicator": "Kehadiran",
+    "percentage": 40
+  }
+]
